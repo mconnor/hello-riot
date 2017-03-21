@@ -10,16 +10,23 @@
 <body>
       <!-- place the custom tag anywhere inside the body -->
       <sample></sample>
-      <sample></sample>
+
       <!-- include the tag -->
 
-        <script type="riot/tag" src="tags/sample.tag"></script>
+      <script type="riot/tag" src="tags/sample.tag"></script>
       <!-- include riot.js -->
       <script src="./node_modules/riot/riot+compiler.js"></script>
 
       <!-- mount the tag -->
       <script>
-            riot.mount('sample')
+            riot.mount('sample', {
+              headline:" Hello Riot - let's do this!",
+              techs: [
+                { name: 'HTML' },
+                { name: 'JavaScript' },
+                { name: 'CSS' }
+              ]
+            });
       </script>
 </body>
 

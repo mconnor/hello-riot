@@ -1,16 +1,16 @@
 <sample>
-  <h3>{ message }</h3>
+  <h3>{ opts.headline }</h3>
   <ul>
-    <li each={ techs }>{ name }</li>
+    <li each={ opts.techs }>{ name }</li>
   </ul>
 
   <script>
-    this.message = 'Hello, Riot!'
-    this.techs = [
-      { name: 'HTML' },
-      { name: 'JavaScript' },
-      { name: 'CSS' }
-    ]
+    //this.message = 'Hello, Riot!'
+    // this.techs = [
+    //   { name: 'HTML' },
+    //   { name: 'JavaScript' },
+    //   { name: 'CSS' }
+    // ]
   </script>
 
   <style>
