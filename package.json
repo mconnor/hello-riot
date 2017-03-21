@@ -1,0 +1,11 @@
+{
+  "name": "hello-riot",
+  "version": "1.0.0",
+  "description": "test of riot",
+  "main": "index.js",
+  "author": "michael connor",
+  "license": "MIT",
+  "devDependencies": {
+    "riot": "^3.3.2"
+  }
+}

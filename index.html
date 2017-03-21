@@ -1,0 +1,26 @@
+<html>
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+</head>
+
+<body>
+      <!-- place the custom tag anywhere inside the body -->
+      <sample></sample>
+      <sample></sample>
+      <!-- include the tag -->
+
+        <script type="riot/tag" src="tags/sample.tag"></script>
+      <!-- include riot.js -->
+      <script src="./node_modules/riot/riot+compiler.js"></script>
+
+      <!-- mount the tag -->
+      <script>
+            riot.mount('sample')
+      </script>
+</body>
+
+</html>
