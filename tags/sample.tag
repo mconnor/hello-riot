@@ -14,8 +14,7 @@
       </form>
 
       <script>
-
-            this.items = opts.myItems ;
+            this.items = opts.myItems;
             toggle(e) {
                   console.log(e.item);
                   let item = e.item;
@@ -24,15 +23,14 @@
             handleSubmit(e) {
                   e.preventDefault();
                   //  { name: 'Shop for groceries' },
-                  let item = {name: this.refs.input.value}
+                  if (!this.refs.input.value) return;
+                  let item = {
+                        name: this.refs.input.value
+                  }
 
-              
                   this.items.push(item)
-                  console.log("handleSubmit " + item.name);
                   this.refs.input.value = ''
             }
-
-
       </script>
 
       <style>
